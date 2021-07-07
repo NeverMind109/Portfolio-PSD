@@ -1,0 +1,6 @@
+$header-block-width: 1920px;
+@mixin p-styles($font-size, $line-height, $color) {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
