@@ -1,0 +1,65 @@
+@import "variables.scss";
+
+.options-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $container-width;
+    margin: 80px auto 80px;
+    color: #555555;
+
+    &-element {
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            margin: 0 30px 0 0;
+        }
+
+        &-ikon {
+            display: block;
+            margin: 0 auto 30px;
+            fill: currentColor;
+        }
+
+        &-heading {
+            display: block;
+            text-align: center;
+            @include txt-styles(22px, 25px, 600, currentColor);
+            margin: 0 auto 20px;
+        }
+
+        &-txt {
+            display: block;
+            text-align: center;
+            @include txt-styles(14px, 24px,300, #949494);
+            padding: 0 auto 30px;
+            box-sizing: border-box;
+        }
+
+        &-line {
+            display: block;
+            width: 80px;
+            height: 3px;
+            border: 1px solid #f1eee9;
+            box-sizing: border-box;
+            background-color: #f1eee9;
+            margin: 0 auto;
+        }
+    }
+}
+.options-block-element:hover
+.options-block-element-line {
+    background-color: #c7b299;
+    border-color: #c7b299;
+}
+
+.options-block-element:hover
+.options-block-element-ikon {
+    fill: #c7b299;
+}
+
+.options-block-element:hover 
+.options-block-element-heading {
+    color: #c7b299;
+}

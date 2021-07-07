@@ -1,6 +1,8 @@
-$header-block-width: 1920px;
-@mixin p-styles($font-size, $line-height, $color) {
+$page-width: 1920px;
+$container-width: 1200px;
+@mixin txt-styles($font-size, $line-height, $font-weight, $color) {
     font-size: $font-size;
     line-height: $line-height;
+    font-weight: $font-weight;
     color: $color;
 }
