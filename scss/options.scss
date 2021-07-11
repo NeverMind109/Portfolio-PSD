@@ -1,65 +1,75 @@
 @import "variables.scss";
 
 .options-block {
+    width: $page-width;
+    height: $options-height;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: $container-width;
-    margin: 80px auto 80px;
-    color: #555555;
+    margin: 0 auto;
 
-    &-element {
+    &-container {
+        width: 61vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        
+        &-element {
+            color: #555555;
 
-        &:nth-child(1),
-        &:nth-child(2),
-        &:nth-child(3) {
-            margin: 0 30px 0 0;
-        }
+            &-icon {
+                display: block;
+                margin: auto;
+                fill: #555555;
+                align-self: flex-start;
+                height: 50px;
+            }
+            
+            &-heading {
+                display: block;
+                text-align: center;
+                font-family: 'raleway', 'verdana', sans-serif;
+                font-style: normal;
+                @include txt-styles(22px, 22px, 600, #555555);
+                margin: 25px auto 20px;
+            }
 
-        &-ikon {
-            display: block;
-            margin: 0 auto 30px;
-            fill: currentColor;
-        }
+            &-txt {
+                display: block;
+                text-align: center;
+                hyphens: auto;
+                font-family: 'montserrat', 'verdana', sans-serif;
+                font-style: normal;
+                @include txt-styles(14px, 24px, 300, #8c8c8c);
+                margin: 0 0 15px;
+            }
 
-        &-heading {
-            display: block;
-            text-align: center;
-            @include txt-styles(22px, 25px, 600, currentColor);
-            margin: 0 auto 20px;
-        }
+            &-line {
+                display: block;
+                width: 60px;
+                height: 3px;
+                border: 1px solid #f1eee9;
+                box-sizing: border-box;
+                background-color: #f1eee9;
+                margin: 0 auto;
+            }
 
-        &-txt {
-            display: block;
-            text-align: center;
-            @include txt-styles(14px, 24px,300, #949494);
-            padding: 0 auto 30px;
-            box-sizing: border-box;
-        }
+            &:hover &-line {
+                background-color: #c7b299;
+                border-color: #c7b299;
+            }
 
-        &-line {
-            display: block;
-            width: 80px;
-            height: 3px;
-            border: 1px solid #f1eee9;
-            box-sizing: border-box;
-            background-color: #f1eee9;
-            margin: 0 auto;
+            &:hover &-heading {
+                color: #c7b299;
+            }
+
+            &:hover &-icon {
+                fill: #c7b299;
+            }
         }
     }
-}
-.options-block-element:hover
-.options-block-element-line {
-    background-color: #c7b299;
-    border-color: #c7b299;
-}
-
-.options-block-element:hover
-.options-block-element-ikon {
-    fill: #c7b299;
-}
-
-.options-block-element:hover 
-.options-block-element-heading {
-    color: #c7b299;
 }
