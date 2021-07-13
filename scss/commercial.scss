@@ -1,0 +1,74 @@
+@import "variables.scss";
+
+.commercial-block {
+    background-image: url("../img/aside-background.png");
+    background-size: cover;
+
+    &-container {
+        width: 60vw;
+        height: 16vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+        &-text-block {
+
+            &-heading {
+                display: block;
+                text-align: left;
+
+                &-yellow {
+                    font-family: 'raleway', 'verdana', sans-serif;
+                    font-style: normal;
+                    @include txt-styles(28px, 28px, 400, #c7b299);
+                }
+
+                &-white {
+                    font-family: 'raleway', 'verdana', sans-serif;
+                    font-style: normal;
+                    @include txt-styles(28px, 28px, 400, #fff);
+                }
+            }
+            &-txt {
+                display: block;
+                text-align: left;
+                margin: 5px 0 0;
+                font-family: 'montserrat', 'verdana', sans-serif;
+                font-style: normal;
+                @include txt-styles(18px, 18px, 300, #615855);
+            }
+        }
+        &-btn {
+            display: block;
+            border: none;
+            border-bottom: 3px solid #736357;
+            background-color: #998675;
+            border-radius: 3px;
+            width: 170px;
+            padding: 13px;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            outline: none;
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-style: normal;
+            @include txt-styles(14px, 23px, 800, #f1efed);
+
+            &-txt {
+                display: block;
+            }
+            
+            &:hover {
+                background-color: #998675;
+                color: rgb(51, 50, 50);
+            }
+
+            &:active {
+                background-color: #6e6155;
+                color: black;
+            }
+        }
+    }
+}

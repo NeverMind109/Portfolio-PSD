@@ -6,7 +6,7 @@ body {
 
 .header-block {
     width: $page-width;
-    margin: 0 auto;
+    margin: 0;
     background-image: url("../img/header-background.png");
     filter: brightness(90%);
     background-size: cover;
@@ -20,7 +20,7 @@ body {
             padding: 40px 0 0;
             box-sizing: border-box;
             justify-content: space-between;        
-            margin: 0 auto;
+            margin: auto;
             width: 61vw;
 
             &-logotype {
@@ -260,20 +260,21 @@ body {
                     border: none;
                     border-bottom: 3px solid #736357;
                     background-color: #998675;
-                    border-radius: 5px;
+                    border-radius: 3px;
                     width: 170px;
                     padding: 18px;
                     box-sizing: border-box;
                     text-decoration: none;
                     text-transform: uppercase;
                     text-align: center;
+                    outline: none;
                     font-family: 'raleway', 'verdana', sans-serif;
                     font-style: normal;
                     @include txt-styles(14px, 14px, 800, #fff);
-                    outline: none;
                     
                     &-txt {
                         margin: auto;
+
                     }
 
                     &:hover {
