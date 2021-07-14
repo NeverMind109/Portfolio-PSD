@@ -52,9 +52,9 @@
             text-transform: uppercase;
             text-align: center;
             outline: none;
-            font-family: 'montserrat', 'verdana', sans-serif;
+            font-family: 'raleway', 'verdana', sans-serif;
             font-style: normal;
-            @include txt-styles(14px, 23px, 800, #f1efed);
+            @include txt-styles(14px, 23px, 800, #fff);
 
             &-txt {
                 display: block;

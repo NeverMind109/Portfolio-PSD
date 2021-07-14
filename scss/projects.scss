@@ -1,0 +1,190 @@
+@import "variables.scss";
+
+.projects-block {
+
+    &-container {
+        width: 60vw;
+        height: 80vh;
+        background-color: #fff;
+        margin: auto; 
+        padding: 80px 0 80px;
+        box-sizing: border-box;
+
+        &-heading {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-family: 'raleway', 'verdana', sans-serif;
+            font-style: normal;
+            @include txt-styles(30px, 30px, 600, #555555);
+        }
+
+        &-txt {
+            display: block;
+            text-align: center;
+            hyphens: auto;
+            margin: 20px 20% 0;
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-style: normal;
+            @include txt-styles(14px, 28px, 300, #615855);
+        }
+
+        &-navigation {
+            display: flex;
+            justify-content: center;
+            margin: 30px 90px 40px;
+            padding: 0;
+
+            &-list {
+                list-style-type: none;
+                border: 1px solid #ebebeb;
+                border-radius: 5px;
+                padding: 5px 20px 5px;
+                box-sizing: border-box;
+                margin: 0 0.4% 0;
+                font-family: 'montserrat', 'verdana', sans-serif;
+                font-style: normal;
+                @include txt-styles(14px, 21px, 300, #8c8c8c);
+
+                &-item {
+                    text-decoration: none;
+                    color: currentColor;
+                }
+                &:hover {
+                    background-color: #998675;
+                    color: #fff;
+                }
+                &:active {
+                    color: #000;
+                }
+            }
+        }
+
+        &-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 0 40px;
+
+            &-card {
+                position: relative;
+
+                &-image {
+                    display: block;
+                    width: 100%;
+                }
+
+                &-text-block {
+                    background-color: #fbfaf8;
+                    padding: 29px 27px  20px;
+                    box-sizing: border-box;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        border: 10px solid transparent; 
+                        border-bottom: 10px solid #fbfaf8;
+                        position: absolute;
+                        bottom: 87px;
+                        left: 17px;
+                    }    
+
+                    &-heading {
+                        display: block;
+                        width: 100%;
+                        font-family: 'raleway', 'verdana', sans-serif;
+                        font-style: normal;
+                        @include txt-styles(20px, 20px, 500, #c7b299);
+                    }
+
+                    &-txt {
+                        display: block;
+                        margin: 10px 0 0;
+                        width: 100%;
+                        font-family: 'montserrat', 'verdana', sans-serif;
+                        font-style: normal;
+                        @include txt-styles(14px, 20px, 300, #d1d1d1);
+                    }
+                }
+
+                &-link, &-search {
+                    display: none;
+                    position: absolute;
+                    border: none;
+                    width: 25px;
+                    height: 25px;
+                    top: 33%;
+                    background-position: center;
+                    background-size: cover;
+                    background-color: transparent;
+                }
+                &-link {
+                    background-image: url("../img/project-block-card-link.png");
+                    left: 39%;
+                }
+                &-search {
+                    background-image: url("../img/project-block-card-lupa.png");
+                    right: 39%;
+                }
+
+                &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                    margin: 0 0 30px;
+                }
+                &:hover &-text-block:before {
+                    border-bottom: 10px solid #362f2d;
+                }
+                &:hover &-text-block {
+                    background-color: #362f2d;
+                }
+                &:hover &-text-block-heading {
+                    color: #fff;
+                }
+                &:hover &-text-block-txt {
+                    color: #c7b299;
+                }
+                &:hover &-image {
+                    filter: brightness(70%);
+                }
+                &:hover &-link, &:hover &-search {
+                    display: block;
+                }
+            }
+        }
+
+        &-button {
+            display: block;
+            margin: auto;
+            border: none;
+            border-bottom: 3px solid #736357;
+            background-color: #998675;
+            border-radius: 3px;
+            width: 170px;
+            padding: 13px;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            text-align: center;
+            outline: none;
+            font-family: 'raleway', 'verdana', sans-serif;
+            font-style: normal;
+            @include txt-styles(14px, 23px, 800, #fff);
+            
+
+            &-reference {
+                text-decoration: none;
+                color:currentColor;
+
+                &-txt {
+
+                }
+            }
+            &:hover {
+                background-color: #998675;
+                color: rgb(51, 50, 50);
+            }
+            &:active {
+                background-color: #6e6155;
+                color: black;
+            }
+        }
+    }
+}

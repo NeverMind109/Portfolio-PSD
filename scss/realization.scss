@@ -3,12 +3,14 @@
 .realization-block {
     background-color: #fbfaf8;
     min-height: $realization-height;
+    display: flex;
+    margin: auto;
 
     &-container {
         padding: 80px 0 0;
         box-sizing: border-box;
         width: 64vw;
-        margin: 0 auto;
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
