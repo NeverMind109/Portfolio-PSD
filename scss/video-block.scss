@@ -1,0 +1,82 @@
+@import "variables.scss";
+
+.video-block {
+    margin: auto;
+    height: 75vh;
+    width: 100vw;
+    position: relative;
+
+    &-video {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        object-fit: cover;
+        position: relative;
+        
+    }
+    &-playbtn {
+        border:none;
+        background-color: transparent;
+        position: absolute;
+        top: 30%;
+        left: 47%;
+
+        &-circle {
+            fill: #000;
+            opacity: 0.4;
+            position: relative;
+        }
+        &-icon {
+            fill: #fff;
+            position: absolute;
+            top: 16%;
+            left: 18%;
+        }
+        &--hide {
+            display: none;
+        }
+        
+        &:hover &-icon{
+            fill: #b2a28f;
+        }
+        &:active &-circle {
+            opacity: 1;
+        }
+    }
+
+    &-information {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+
+        &-heading {
+            display: block;
+            width: 60%;
+            text-align: center;
+            font-family: 'raleway', 'verdana', sans-serif;
+            font-style: normal;
+            @include txt-styles(30px, 30px, 500, #fff);
+        }
+
+        &-txt {
+            display: block;
+            text-align: center;
+            margin: 13px 0 0;
+            width: 60%;
+            hyphens: auto;
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-style: normal;
+            @include txt-styles(16px, 28px, 300, #fff);
+        }
+
+        &-duration {
+            display: block;
+            text-align: center;
+            width: 60%;
+            margin: 23px 0 0;
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-style: normal;
+            @include txt-styles(14px, 28px, 400, #b2a28f);
+        }
+    }
+}
