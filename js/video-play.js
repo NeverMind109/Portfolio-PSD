@@ -1,11 +1,11 @@
-var video = document.getElementById("video"),
-    button = document.getElementById("video-btn");
+var video = document.querySelector("#video"),
+    button = document.querySelector("#video-btn");
 
 button.addEventListener("click", function() {
   video.play()
   video.setAttribute("controls","controls");
 }, false);
 
-$(".video-block-playbtn").click(function() {
-  $(".video-block-playbtn").addClass('video-block-playbtn--hide');
+$(".video-block-information-playbtn").click(function() {
+  $(".video-block-information-playbtn").addClass('video-block-information--hide');
 })

@@ -1,0 +1,65 @@
+@import "variables.scss";
+
+.statistic-block {
+    height: 32vh;
+    width: 100vw;
+    background-image: url("../img/statistic-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-container {
+        width: 57vw;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &-card {
+            padding: 9px 0 0;
+            box-sizing: border-box;
+
+            &-icon {
+                display: block;
+                margin: 0 auto;
+                fill: #c7b299;
+                height: 44px;
+            }
+
+            &-heading {
+                display: block;
+                text-align: center;
+                font-family: 'montserrat', 'verdana', sans-serif;
+                font-style: normal;
+                @include txt-styles(48px, 36px, 200, #fff);
+                margin: 31px auto 12px;
+            }
+
+            &-quantity {
+                display: block;
+                text-align: center;
+                font-family: 'montserrat', 'verdana', sans-serif;
+                font-style: normal;
+                @include txt-styles(14px, 20px, 300, #c7b299);
+                margin: 0 auto 27px;
+            }
+
+            &-line {
+                width: 35px;
+                height: 3px;
+                background-color: #fff;
+                border: 1px solid #fff;
+                box-sizing: border-box;
+                margin: auto;
+            }
+
+            &:hover &-heading {
+                color: #c7b299;
+            }
+            &:hover &-line {
+                background-color: #c7b299;
+                border-color: #c7b299;
+            }
+        }
+    }
+}
