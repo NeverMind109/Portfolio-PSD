@@ -4,27 +4,29 @@
     width: $page-width;
     height: $options-height;
     background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    margin: auto;
 
     &-container {
-        width: 61vw;
+        width: $container-width;
+        height: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: flex-start;
-        margin: 0 auto;
-        
+        align-items: center;
+        margin: auto;
+
         &-element {
             color: #555555;
+            width: 23%;
+            height: 50%;
+            margin: auto;
 
             &-icon {
                 display: block;
-                margin: auto;
+                margin: 0 auto;
                 fill: #555555;
                 align-self: flex-start;
-                height: 50px;
+                height: 49px;
             }
             
             &-heading {
@@ -33,7 +35,7 @@
                 font-family: 'raleway', 'verdana', sans-serif;
                 font-style: normal;
                 @include txt-styles(22px, 22px, 600, #555555);
-                margin: 25px auto 20px;
+                margin: 15px auto 15px;
             }
 
             &-txt {
@@ -43,12 +45,12 @@
                 font-family: 'montserrat', 'verdana', sans-serif;
                 font-style: normal;
                 @include txt-styles(14px, 24px, 300, #8c8c8c);
-                margin: 0 0 15px;
+                margin: 0 0 20px;
             }
 
             &-line {
                 display: block;
-                width: 60px;
+                width: 70px;
                 height: 3px;
                 border: 1px solid #f1eee9;
                 box-sizing: border-box;

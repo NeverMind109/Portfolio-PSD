@@ -1,8 +1,14 @@
-$page-width: 100vw;
+$page-width: 1920px;
+$container-width: 64%;
 $header-height: 10vh;
 $header-page-height: 99.3vh;
 $options-height: 40vh;
 $realization-height: 70vh;
+$commercial-height: 16vh;
+$projects-block-height: 80vh;
+$video-block-height: 75vh;
+$mobile-device-block-height: 74.3vh;
+$statistic-block-height: 32vh;
 
 @mixin txt-styles($font-size, $line-height, $font-weight, $color) {
     font-size: $font-size;

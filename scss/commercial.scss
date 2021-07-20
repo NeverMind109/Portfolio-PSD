@@ -1,17 +1,21 @@
 @import "variables.scss";
 
 .commercial-block {
-    height: 16vh;
+    width: $page-width;
+    height: $commercial-height;
     background-image: url("../img/aside-background.png");
     background-size: cover;
+    margin: auto;
 
     &-container {
-        width: 60vw;
+        width: $container-width;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
+        padding: 0 30px;
+        box-sizing: border-box;
 
         &-text-block {
 

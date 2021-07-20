@@ -1,12 +1,14 @@
 @import "variables.scss";
 
 .projects-block {
-    min-height: 80vh;
+    min-height: $projects-block-height;
+    width: $page-width;
+    background-color: #fff;
+    margin: auto;
 
     &-container {
-        width: 60vw;
+        width: $container-width;
         height: 100%;
-        background-color: #fff;
         margin: auto; 
         padding: 80px 0 80px;
         box-sizing: border-box;
@@ -27,7 +29,7 @@
             margin: 20px 20% 0;
             font-family: 'montserrat', 'verdana', sans-serif;
             font-style: normal;
-            @include txt-styles(14px, 28px, 300, #615855);
+            @include txt-styles(16px, 28px, 300, #8c8c8c);
         }
 
         &-navigation {
@@ -66,7 +68,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin: 0 0 40px;
+            margin: 0 30px 40px;
 
             &-card {
                 position: relative;

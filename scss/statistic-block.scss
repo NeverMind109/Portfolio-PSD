@@ -1,19 +1,22 @@
 @import "variables.scss";
 
 .statistic-block {
-    height: 32vh;
-    width: 100vw;
+    height: $statistic-block-height;
+    width: $page-width;
     background-image: url("../img/statistic-background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    margin: auto;
 
     &-container {
-        width: 57vw;
+        width: $container-width;
         height: 100%;
         margin: auto;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        padding: 0 70px 0 60px;
+        box-sizing: border-box;
 
         &-card {
             padding: 9px 0 0;
@@ -42,11 +45,12 @@
                 font-style: normal;
                 @include txt-styles(14px, 20px, 300, #c7b299);
                 margin: 0 auto 27px;
+                text-transform: uppercase;
             }
 
             &-line {
-                width: 35px;
-                height: 3px;
+                width: 30px;
+                height: 2px;
                 background-color: #fff;
                 border: 1px solid #fff;
                 box-sizing: border-box;

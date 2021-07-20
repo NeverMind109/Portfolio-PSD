@@ -1,29 +1,31 @@
 @import "variables.scss";
 
 .mobile-device-block {
-    width: 100vw;
-    height: 74.3vh;
+    width: $page-width;
+    min-height: $mobile-device-block-height;
     background-color: #fff;
+    margin: auto;
 
     &-container {
-        width: 60vw;
+        width: $container-width;
         height: 100%;
         display: flex;
+        justify-content: space-between;
         flex-wrap: nowrap;
         margin: auto;
-        padding: 80px 0 0;
+        padding: 80px 0 0 4%;
         box-sizing: border-box;
 
         &-image {
             width: 38%;
             height: 100%;
-            margin: 0 20px 0 50px;
+            margin: 0;
         }
 
         &-text-block {
             padding: 115px 0 0;
             box-sizing: border-box;
-            margin: 0;
+            margin: 0 0 0 25px;
 
             &-heading {
                 font-family: 'raleway', 'verdana', sans-serif;
@@ -41,7 +43,7 @@
                 font-style: normal;
                 @include txt-styles(16px, 28px, 300, #8c8c8c);
                 list-style-type: none;
-                margin: 30px 0 0;
+                margin: 30px 0 0 20px;
                 padding: 0 0 0 85px;
                 box-sizing: border-box;
 
@@ -60,7 +62,7 @@
                         border-radius: 50%;
                         position: absolute;
                         top: 3px;
-                        left: -42px;
+                        left: -51px;
                     }
                     &:after{
                         content: "";
@@ -73,7 +75,7 @@
                         transform: rotate(135deg);
                         position: absolute;
                         top: 9px;
-                        left: -38px;
+                        left: -47px;
                     }
                 }
             }

@@ -2,8 +2,8 @@
 
 .video-block {
     margin: auto;
-    height: 75vh;
-    width: 100vw;
+    height: $video-block-height;
+    width: $page-width;
     position: relative;
     overflow: hidden;
     display: flex;
