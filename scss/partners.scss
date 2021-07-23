@@ -1,0 +1,19 @@
+@import "variables.scss";
+
+.partners {
+    height: $partners-height;
+    width: $page-width;
+    background-image: url("../img/partners-background.png");
+    background-size: cover;
+    margin: 0 auto;
+
+    &-container {
+        height: 100%;
+        width: $container-width;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
