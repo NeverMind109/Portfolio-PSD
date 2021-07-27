@@ -1,0 +1,110 @@
+@import "variables.scss";
+
+.footer-bottom {
+    width: $page-width;
+    height: $footer-bottom-height;
+    background-color: #111111;
+    margin: 0 auto;
+
+    &-container {
+        width: $container-width;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 25px 30px 0;
+        box-sizing: border-box;
+
+        &-left-side {
+            display: flex;
+            align-items: center;
+            padding: 0;
+
+            &-item {
+                display: block;
+                position: relative;
+
+                &:nth-child(1) {
+                    margin: 0 13px 0 0;
+                }
+                &:nth-child(2) {
+                    margin: 0 13px 0 13px;
+                }
+                &:nth-child(3) {
+                    margin: 0 10px 0 10px;
+                }
+                &:nth-child(4) {
+                    margin: 0 0 0 15px;
+                }
+
+                &-txt {
+                    display: block;
+                    font-family: 'montserrat', 'verdana', sans-serif;
+                    font-style: normal;
+                    @include txt-styles(13px, 20px, 300, #555555);
+                    text-decoration: none;
+
+                    &-colored {
+                        color: #959595;
+                    }
+                    &:hover {
+                        color: #c7b299;
+                    }
+                }
+                &:nth-child(2):after,
+                &:nth-child(3):after,
+                &:nth-child(4):after {
+                    content: "";
+                    display: block;
+                    height: 13px;
+                    width: 1px;
+                    background-color: #555555;
+                    position: absolute;
+                    bottom: 5px;
+                    left: -12px;
+                }
+            }
+        }
+
+        &-right-side {
+            display: flex;
+            align-items: center;
+            padding: 0;
+
+            &-item {
+                display: block;
+                position: relative;
+                
+                &:nth-child(1) {
+                    margin: 0 13px 0 0;
+                }
+                &:nth-child(2) {
+                    margin: 0 0 0 13px;
+                }
+
+
+                &-txt {
+                   display: block;
+                   font-family: 'montserrat', 'verdana', sans-serif;
+                   font-style: normal;
+                   @include txt-styles(13px, 20px, 300, #555555);
+
+                    &-colored {
+                        color: #959595;
+                    }
+                }
+                &:nth-child(1):after {
+                    content: "";
+                    display: block;
+                    height: 13px;
+                    width: 1px;
+                    background-color: #555555;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 167px;
+                }
+            }
+        }
+    }
+}

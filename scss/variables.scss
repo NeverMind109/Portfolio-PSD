@@ -11,6 +11,9 @@ $mobile-device-block-height: 74.3vh;
 $statistic-block-height: 32vh;
 $recent-posts-height: 72vh;
 $partners-height: 52vh;
+$footer-up-height: 55vh;
+$footer-bottom-height: 10vh;
+
 
 @mixin txt-styles($font-size, $line-height, $font-weight, $color) {
     font-size: $font-size;
